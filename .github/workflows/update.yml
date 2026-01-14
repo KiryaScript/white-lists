@@ -28,4 +28,4 @@ jobs:
         env:
           # Передаем секрет как переменную окружения
           MY_TOKEN: ${{ secrets.MY_TOKEN }}
-        run: python main.py
+        run: python source/main.py
