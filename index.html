@@ -1,157 +1,268 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhiteLists VPN | Free & Fast</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '1', boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)' },
+                            '50%': { opacity: '.9', boxShadow: '0 0 25px rgba(59, 130, 246, 0.8)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        body { background-color: #0f172a; color: #e2e8f0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .btn-copy:active { transform: scale(0.95); }
-        .custom-scroll::-webkit-scrollbar { width: 8px; }
-        .custom-scroll::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 4px; }
-        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 4px; }
+        /* Фон с градиентными пятнами */
+        body {
+            background-color: #0b0f19;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.15) 0%, transparent 25%), 
+                radial-gradient(circle at 85% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 25%);
+            color: #e2e8f0;
+        }
+
+        /* Эффект стекла */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Кастомный скроллбар */
+        .custom-scroll::-webkit-scrollbar { width: 6px; }
+        .custom-scroll::-webkit-scrollbar-track { background: transparent; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
         .custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
+
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center p-4">
+<body class="min-h-screen flex flex-col items-center justify-between p-4 selection:bg-blue-500 selection:text-white">
 
-    <header class="w-full max-w-4xl mt-10 text-center space-y-4">
-        <h1 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            WhiteLists VPN
-        </h1>
-        <p class="text-gray-400 text-lg">Автоматический сборник бесплатных VPN-конфигов</p>
-        
-        <div class="flex justify-center gap-2 flex-wrap mt-4">
-            <img src="https://img.shields.io/github/last-commit/KiryaScript/white-lists?style=for-the-badge&logo=github&color=7dc4e4" alt="Last Commit">
-            <img src="https://img.shields.io/github/actions/workflow/status/KiryaScript/white-lists/update.yml?branch=main&label=STATUS&style=for-the-badge&logo=github-actions&logoColor=white" alt="Status">
-        </div>
-    </header>
+    <div class="w-full max-w-5xl flex flex-col items-center">
 
-    <main class="w-full max-w-4xl mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-        
-        <div class="glass rounded-2xl p-6 shadow-xl">
-            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-                <i class="fa-solid fa-server text-blue-400"></i> Конфиги
-            </h2>
-            <div id="configs-container" class="space-y-3 max-h-[600px] overflow-y-auto pr-2 custom-scroll">
-                </div>
-        </div>
-
-        <div class="glass rounded-2xl p-6 shadow-xl">
-            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-                <i class="fa-solid fa-book text-purple-400"></i> Инструкции
-            </h2>
-            
-            <div class="space-y-4">
-                <details class="group bg-slate-800 rounded-lg p-4 cursor-pointer">
-                    <summary class="font-medium flex justify-between items-center text-green-400">
-                        <span>Android (v2rayNG)</span>
-                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
-                    </summary>
-                    <div class="mt-3 text-sm text-gray-300 space-y-2">
-                        <p>1. Скачайте v2rayNG.</p>
-                        <p>2. Скопируйте ссылку на конфиг слева.</p>
-                        <p>3. В приложении: <b>+ -> Импорт из буфера</b>.</p>
-                        <p>4. Нажмите три точки -> Проверка профилей.</p>
-                    </div>
-                </details>
-
-                <details class="group bg-slate-800 rounded-lg p-4 cursor-pointer">
-                    <summary class="font-medium flex justify-between items-center text-blue-400">
-                        <span>PC (NekoRay / Hiddify)</span>
-                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
-                    </summary>
-                    <div class="mt-3 text-sm text-gray-300 space-y-2">
-                        <p>1. Скачайте клиент (Hiddify проще).</p>
-                        <p>2. Скопируйте ссылку.</p>
-                        <p>3. Вставьте как "Новый профиль" или "Subscription".</p>
-                        <p>4. Включите "TUN Mode" (Режим VPN).</p>
-                    </div>
-                </details>
-
-                <details class="group bg-slate-800 rounded-lg p-4 cursor-pointer">
-                    <summary class="font-medium flex justify-between items-center text-gray-200">
-                        <span>iOS (V2Box / Streisand)</span>
-                        <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
-                    </summary>
-                    <div class="mt-3 text-sm text-gray-300 space-y-2">
-                        <p>1. Скачайте V2Box в AppStore.</p>
-                        <p>2. Скопируйте ссылку.</p>
-                        <p>3. Configs -> Add Subscription.</p>
-                        <p>4. Вставьте ссылку и обновите.</p>
-                    </div>
-                </details>
+        <header class="w-full text-center mt-12 mb-10 animate-fade-in space-y-4">
+            <div class="inline-block p-2 px-4 rounded-full bg-slate-800/50 border border-slate-700/50 text-xs text-blue-300 font-mono mb-2">
+                v3.0 • Auto-Updated
             </div>
-        </div>
-    </main>
+            
+            <h1 class="text-6xl md:text-7xl font-extrabold tracking-tight">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-slate-400">
+                    WhiteLists
+                </span>
+                <span class="text-blue-500">VPN</span>
+            </h1>
+            
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                Коллекция проверенных конфигураций для свободного интернета.
+                <br class="hidden md:block">Обновляется автоматически каждый час.
+            </p>
 
-    <footer class="mt-12 mb-6 text-gray-500 text-sm">
-        <a href="https://github.com/KiryaScript/white-lists" class="hover:text-white transition">
-            <i class="fa-brands fa-github"></i> GitHub Repository
-        </a>
+            <div class="flex justify-center gap-3 flex-wrap mt-6 opacity-80 hover:opacity-100 transition-opacity duration-300">
+                <img src="https://img.shields.io/github/last-commit/KiryaScript/white-lists?style=flat&logo=github&color=2563eb&labelColor=1e293b" alt="Last Commit" class="h-6">
+                <img src="https://img.shields.io/github/actions/workflow/status/KiryaScript/white-lists/update.yml?branch=main&label=STATUS&style=flat&logo=github-actions&color=10b981&labelColor=1e293b" alt="Status" class="h-6">
+            </div>
+        </header>
+
+        <main class="w-full grid grid-cols-1 lg:grid-cols-12 gap-6 animate-slide-up" style="animation-delay: 0.2s;">
+            
+            <div class="lg:col-span-7 glass-panel rounded-3xl p-1 shadow-2xl overflow-hidden flex flex-col h-[650px]">
+                <div class="p-6 border-b border-white/5 bg-white/5 flex justify-between items-center">
+                    <h2 class="text-xl font-bold flex items-center gap-3 text-white">
+                        <i class="fa-solid fa-bolt text-yellow-400"></i>
+                        Активные конфиги
+                    </h2>
+                    <span class="text-xs text-slate-400 font-mono bg-black/20 px-2 py-1 rounded">TXT FORMAT</span>
+                </div>
+                
+                <div id="configs-container" class="p-4 space-y-3 overflow-y-auto custom-scroll flex-1">
+                    </div>
+            </div>
+
+            <div class="lg:col-span-5 space-y-6">
+                
+                <div class="glass-panel rounded-3xl p-6 shadow-2xl">
+                    <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-white">
+                        <i class="fa-solid fa-graduation-cap text-purple-400"></i>
+                        Как подключить?
+                    </h2>
+                    
+                    <div class="space-y-3">
+                        <details class="group bg-slate-800/40 border border-white/5 rounded-xl overflow-hidden transition-all duration-300 hover:bg-slate-800/60 open:bg-slate-800">
+                            <summary class="p-4 cursor-pointer font-semibold flex justify-between items-center select-none">
+                                <span class="flex items-center gap-3 text-green-400">
+                                    <i class="fa-brands fa-android text-lg"></i> Android
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 text-sm transition-transform group-open:rotate-180"></i>
+                            </summary>
+                            <div class="px-4 pb-4 pt-0 text-sm text-slate-300 space-y-2 font-mono leading-relaxed border-t border-white/5 mt-2">
+                                <div class="pt-2">1. Скачайте <b>v2rayNG</b>.</div>
+                                <div>2. Скопируйте ссылку на конфиг.</div>
+                                <div>3. В приложении нажмите <b>+</b>.</div>
+                                <div>4. Выберите <b>"Импорт из буфера"</b>.</div>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-800/40 border border-white/5 rounded-xl overflow-hidden transition-all duration-300 hover:bg-slate-800/60 open:bg-slate-800">
+                            <summary class="p-4 cursor-pointer font-semibold flex justify-between items-center select-none">
+                                <span class="flex items-center gap-3 text-blue-400">
+                                    <i class="fa-brands fa-windows text-lg"></i> Windows / Linux
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 text-sm transition-transform group-open:rotate-180"></i>
+                            </summary>
+                            <div class="px-4 pb-4 pt-0 text-sm text-slate-300 space-y-2 font-mono leading-relaxed border-t border-white/5 mt-2">
+                                <div class="pt-2">1. Скачайте <b>Hiddify</b> или <b>NekoBox</b>.</div>
+                                <div>2. Скопируйте ссылку.</div>
+                                <div>3. Нажмите <b>Ctrl+V</b> в программе.</div>
+                                <div>4. Включите <b>TUN Mode</b>.</div>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-800/40 border border-white/5 rounded-xl overflow-hidden transition-all duration-300 hover:bg-slate-800/60 open:bg-slate-800">
+                            <summary class="p-4 cursor-pointer font-semibold flex justify-between items-center select-none">
+                                <span class="flex items-center gap-3 text-gray-200">
+                                    <i class="fa-brands fa-apple text-lg"></i> iOS / MacOS
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 text-sm transition-transform group-open:rotate-180"></i>
+                            </summary>
+                            <div class="px-4 pb-4 pt-0 text-sm text-slate-300 space-y-2 font-mono leading-relaxed border-t border-white/5 mt-2">
+                                <div class="pt-2">1. Скачайте <b>V2Box</b> или <b>Streisand</b>.</div>
+                                <div>2. Скопируйте ссылку.</div>
+                                <div>3. Нажмите <b>Import Subscription</b>.</div>
+                                <div>4. Обновите список серверов.</div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-3xl p-6 shadow-lg text-center">
+                   <p class="text-sm text-slate-400">Проект полностью бесплатен.</p>
+                   <a href="https://github.com/KiryaScript/white-lists" class="inline-flex items-center gap-2 mt-3 text-white hover:text-blue-400 transition-colors font-semibold">
+                       <i class="fa-brands fa-github"></i> Поставить звезду ⭐
+                   </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="w-full text-center py-8 mt-8 text-slate-600 text-sm">
+        <p>© 2026 WhiteLists VPN. Open Source & Free.</p>
     </footer>
 
-    <div id="toast" class="fixed bottom-5 right-5 bg-green-600 text-white px-6 py-3 rounded-lg shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300">
-        Ссылка скопирована!
+    <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 pointer-events-none">
+        <div class="bg-emerald-600/90 backdrop-blur text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 border border-emerald-500/50">
+            <i class="fa-solid fa-check-circle"></i>
+            <span class="font-medium">Ссылка скопирована!</span>
+        </div>
     </div>
 
     <script>
+        // --- НАСТРОЙКИ ---
         const REPO_USER = "KiryaScript";
         const REPO_NAME = "white-lists";
+        const TOTAL_FILES = 26;
         const container = document.getElementById('configs-container');
 
+        // Функция создания кнопки
         function createButton(i) {
             const url = `https://github.com/${REPO_USER}/${REPO_NAME}/raw/refs/heads/main/githubmirror/${i}.txt`;
-            let label = `Конфиг #${i}`;
+            
+            // Базовые стили
+            let label = `Config #${i}`;
+            let subLabel = "Mixed Protocols";
             let icon = "fa-link";
-            let colorClass = "bg-slate-700 hover:bg-slate-600";
+            let styles = "bg-slate-800/50 hover:bg-slate-700 hover:translate-x-1 border-slate-700/50";
+            let iconColor = "text-slate-400";
+            let labelColor = "text-slate-200";
 
+            // Стили для 26-го файла (Premium look)
             if (i === 26) {
-                label = "🇷🇺 Обход блокировок (Белый список)";
+                label = "RU Bypass List";
+                subLabel = "Обход блокировок (Белый список)";
                 icon = "fa-shield-halved";
-                colorClass = "bg-blue-600 hover:bg-blue-500 border border-blue-400";
+                styles = "bg-gradient-to-r from-blue-900/40 to-slate-900/40 border-blue-500/50 hover:border-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] animate-pulse-glow";
+                iconColor = "text-blue-400";
+                labelColor = "text-white";
             }
 
-            const div = document.createElement('div');
-            div.className = `btn-copy flex items-center justify-between p-4 rounded-lg cursor-pointer transition ${colorClass}`;
-            div.onclick = () => copyToClipboard(url);
+            const btn = document.createElement('div');
+            btn.className = `group relative flex items-center justify-between p-4 rounded-xl border cursor-pointer transition-all duration-200 ${styles}`;
+            btn.onclick = () => copyToClipboard(url);
             
-            div.innerHTML = `
-                <div class="flex items-center gap-3">
-                    <i class="fa-solid ${icon}"></i>
-                    <span class="font-medium">${label}</span>
+            btn.innerHTML = `
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-black/20 flex items-center justify-center ${iconColor}">
+                        <i class="fa-solid ${icon} text-lg"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold font-mono text-base ${labelColor}">${label}</span>
+                        <span class="text-xs text-slate-400 font-medium">${subLabel}</span>
+                    </div>
                 </div>
-                <i class="fa-regular fa-copy text-gray-400"></i>
+                <div class="text-slate-500 group-hover:text-white transition-colors">
+                    <i class="fa-regular fa-copy text-xl"></i>
+                </div>
             `;
-            container.appendChild(div);
+            container.appendChild(btn);
         }
-        
-        createButton(26);
 
+        // --- ЛОГИКА ---
+        // 1. Сначала 26-й
+        createButton(26);
+        // 2. Разделитель
+        const divider = document.createElement('div');
+        divider.className = "flex items-center gap-4 py-2";
+        divider.innerHTML = `<div class="h-px bg-slate-800 flex-1"></div><span class="text-xs text-slate-500 font-mono uppercase tracking-widest">Global Proxies</span><div class="h-px bg-slate-800 flex-1"></div>`;
+        container.appendChild(divider);
+        // 3. Остальные
         for (let i = 1; i <= 25; i++) {
             createButton(i);
         }
 
+        // --- КОПИРОВАНИЕ ---
         function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                showToast();
-            }).catch(err => {
-                console.error('Ошибка копирования: ', err);
-                const textArea = document.createElement("textarea");
-                textArea.value = text;
-                document.body.appendChild(textArea);
-                textArea.select();
+            navigator.clipboard.writeText(text).then(showToast).catch(() => {
+                // Fallback
+                const ta = document.createElement("textarea");
+                ta.value = text;
+                document.body.appendChild(ta);
+                ta.select();
                 document.execCommand("Copy");
-                textArea.remove();
+                ta.remove();
                 showToast();
             });
         }
 
         function showToast() {
-            const toast = document.getElementById('toast');
+            const toast = document.querySelector('#toast > div');
             toast.classList.remove('translate-y-20', 'opacity-0');
             setTimeout(() => {
                 toast.classList.add('translate-y-20', 'opacity-0');
