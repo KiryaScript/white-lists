@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPN Configs | Free & Fast</title>
+    <title>WhiteLists VPN | Free & Fast</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { background-color: #0f172a; color: #e2e8f0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .btn-copy:active { transform: scale(0.95); }
+        .custom-scroll::-webkit-scrollbar { width: 8px; }
+        .custom-scroll::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center p-4">
 
     <header class="w-full max-w-4xl mt-10 text-center space-y-4">
         <h1 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            RuBypass VPN Configs
+            WhiteLists VPN
         </h1>
         <p class="text-gray-400 text-lg">Автоматический сборник бесплатных VPN-конфигов</p>
         
@@ -95,21 +99,16 @@
     </div>
 
     <script>
-        // Настройки
         const REPO_USER = "KiryaScript";
         const REPO_NAME = "white-lists";
-        const TOTAL_FILES = 26;
-
         const container = document.getElementById('configs-container');
 
-        // Генерация кнопок
-        for (let i = 1; i <= TOTAL_FILES; i++) {
+        function createButton(i) {
             const url = `https://github.com/${REPO_USER}/${REPO_NAME}/raw/refs/heads/main/githubmirror/${i}.txt`;
             let label = `Конфиг #${i}`;
             let icon = "fa-link";
             let colorClass = "bg-slate-700 hover:bg-slate-600";
 
-            // Выделяем 26-й файл
             if (i === 26) {
                 label = "🇷🇺 Обход блокировок (Белый список)";
                 icon = "fa-shield-halved";
@@ -129,14 +128,18 @@
             `;
             container.appendChild(div);
         }
+        
+        createButton(26);
 
-        // Функция копирования
+        for (let i = 1; i <= 25; i++) {
+            createButton(i);
+        }
+
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(() => {
                 showToast();
             }).catch(err => {
                 console.error('Ошибка копирования: ', err);
-                // Фолбэк для старых браузеров
                 const textArea = document.createElement("textarea");
                 textArea.value = text;
                 document.body.appendChild(textArea);
@@ -147,7 +150,6 @@
             });
         }
 
-        // Показ уведомления
         function showToast() {
             const toast = document.getElementById('toast');
             toast.classList.remove('translate-y-20', 'opacity-0');
