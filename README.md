@@ -2,6 +2,10 @@
 
 # 📖 Коллекция VPN-конфигов
 
+![GitHub last commit](https://img.shields.io/github/last-commit/KiryaScript/white-lists?style=for-the-badge&color=blue)
+![GitHub workflow status](https://img.shields.io/github/actions/workflow/status/KiryaScript/white-lists/update.yml?branch=main&label=Auto-Update&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/KiryaScript/white-lists?style=for-the-badge&color=green)
+
 Автоматически обновляемая коллекция публичных VPN-конфигов (`V2Ray` / `VLESS` / `Hysteria` / `Trojan` / `VMess` / `Reality` / `Shadowsocks`) для обхода блокировок.
   
 Каждый конфиг — это TXT-подписка, которую можно импортировать в современные клиенты (`v2rayNG`, `NekoRay`, `Hiddify`, `V2Box` и др.).
