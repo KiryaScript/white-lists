@@ -1,5 +1,3 @@
-[![Hourly Proxy Update](https://github.com/KiryaScript/white-lists/actions/workflows/update.yml/badge.svg)](https://github.com/KiryaScript/white-lists/actions/workflows/update.yml)
-
 # 📖 Коллекция VPN-конфигов
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/KiryaScript/white-lists?style=for-the-badge&color=blue)
