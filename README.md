@@ -3,7 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/KiryaScript/white-lists?style=for-the-badge&logo=github&color=7dc4e4)
 ![GitHub repo size](https://img.shields.io/github/repo-size/KiryaScript/white-lists?style=for-the-badge&logo=database&color=green)
 ![Python](https://img.shields.io/badge/Python-3.10+-yellow?style=for-the-badge&logo=python&logoColor=white)
-![License](https://img.shields.io/github/license/KiryaScript/white-lists?style=for-the-badge&color=orange)
+![License](https://img.shields.io/github/license/KiryaScript/white-lists?style=for-the-badge&label=License&color=blue)
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/KiryaScript/white-lists/update.yml?branch=main&label=AUTO-UPDATE&style=for-the-badge&logo=github-actions&logoColor=white)
 ![GitHub issues](https://img.shields.io/github/issues/KiryaScript/white-lists?style=for-the-badge&color=red)
