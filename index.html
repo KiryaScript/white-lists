@@ -23,7 +23,6 @@
                         'blob': 'blob 7s infinite',
                         'fade-up': 'fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
                         'shimmer': 'shimmer 2s linear infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     },
                     keyframes: {
                         blob: {
@@ -40,18 +39,6 @@
                             '0%': { backgroundPosition: '-1000px 0' },
                             '100%': { backgroundPosition: '1000px 0' }
                         }
-                    },
-                    colors: {
-                        dark: {
-                            bg: '#05050A',
-                            card: '#0F1016',
-                            border: '#1E1F29'
-                        },
-                        brand: {
-                            primary: '#3B82F6',
-                            accent: '#8B5CF6',
-                            success: '#10B981'
-                        }
                     }
                 }
             }
@@ -66,21 +53,14 @@
         
         .ambient-light {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-            pointer-events: none;
+            top: 0; left: 0; width: 100%; height: 100%;
+            overflow: hidden; z-index: -1; pointer-events: none;
         }
         .blob {
-            position: absolute;
-            filter: blur(80px);
-            opacity: 0.4;
+            position: absolute; filter: blur(80px); opacity: 0.4;
             animation: blob 10s infinite alternate;
         }
-        .blob-1 { top: -10%; left: -10%; width: 500px; height: 500px; background: #4f46e5; animation-delay: 0s; }
+        .blob-1 { top: -10%; left: -10%; width: 500px; height: 500px; background: #4f46e5; }
         .blob-2 { bottom: -10%; right: -10%; width: 600px; height: 600px; background: #7c3aed; animation-delay: 2s; }
         .blob-3 { top: 40%; left: 40%; width: 400px; height: 400px; background: #2563eb; animation-delay: 4s; opacity: 0.2; }
 
@@ -104,9 +84,6 @@
             background-size: 200% auto;
             animation: shimmer 5s linear infinite;
         }
-
-        details > summary { list-style: none; }
-        details > summary::-webkit-details-marker { display: none; }
         
         .config-item:active { transform: scale(0.98); }
     </style>
@@ -127,7 +104,7 @@
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                 </span>
-                SYSTEM ONLINE • V3.0
+                SYSTEM ONLINE • V3.1
             </div>
 
             <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-white drop-shadow-2xl">
@@ -147,34 +124,31 @@
 
         <main class="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 animate-fade-up" style="animation-delay: 0.1s;">
             
-            <div class="lg:col-span-7 flex flex-col h-[700px] glass-card rounded-3xl overflow-hidden relative group">
+            <div class="lg:col-span-7 flex flex-col h-[750px] glass-card rounded-3xl overflow-hidden relative">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 opacity-50"></div>
-
+                
                 <div class="p-6 border-b border-white/5 flex justify-between items-center bg-white/[0.02]">
                     <h2 class="text-2xl font-bold text-white flex items-center gap-3">
                         <i class="fa-solid fa-server text-blue-400"></i>
                         Активные узлы
                     </h2>
-                    <div class="flex items-center gap-2 text-xs font-mono text-slate-500 bg-black/30 px-3 py-1.5 rounded-lg border border-white/5">
-                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                        LIVE UPDATE
-                    </div>
+                    <span class="text-xs font-mono text-slate-500 bg-black/30 px-3 py-1.5 rounded-lg border border-white/5">
+                        <span class="text-green-400">●</span> LIVE
+                    </span>
                 </div>
 
                 <div id="configs-container" class="flex-1 overflow-y-auto p-4 space-y-3 custom-scroll">
                     </div>
                 
-                <div class="absolute bottom-0 w-full h-12 bg-gradient-to-t from-dark-card to-transparent pointer-events-none"></div>
+                <div class="absolute bottom-0 w-full h-12 bg-gradient-to-t from-[#0F1016] to-transparent pointer-events-none"></div>
             </div>
 
             <div class="lg:col-span-5 space-y-6">
-                
                 <div class="glass-card rounded-3xl p-6 relative overflow-hidden">
                     <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
                         <i class="fa-solid fa-book-open-reader text-purple-400"></i>
                         База знаний
                     </h2>
-
                     <div class="space-y-3">
                         <details class="group">
                             <summary class="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/5 cursor-pointer hover:bg-white/10 transition-all duration-300">
@@ -188,11 +162,10 @@
                             </summary>
                             <div class="px-4 py-4 text-sm text-slate-300 font-mono leading-relaxed border-l-2 border-green-500/20 ml-6 mt-2 pl-6">
                                 <p>1. Установите <span class="text-white">v2rayNG</span>.</p>
-                                <p>2. Скопируйте ключ.</p>
-                                <p>3. Нажмите <span class="text-white">+</span> → Импорт из буфера.</p>
+                                <p>2. Скопируйте ключ "RU Bypass".</p>
+                                <p>3. Нажмите <span class="text-white">+</span> → Импорт.</p>
                             </div>
                         </details>
-
                         <details class="group">
                             <summary class="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/5 cursor-pointer hover:bg-white/10 transition-all duration-300">
                                 <div class="flex items-center gap-4">
@@ -204,13 +177,11 @@
                                 <i class="fa-solid fa-chevron-right text-slate-500 group-open:rotate-90 transition-transform"></i>
                             </summary>
                             <div class="px-4 py-4 text-sm text-slate-300 font-mono leading-relaxed border-l-2 border-blue-500/20 ml-6 mt-2 pl-6">
-                                <p>1. Скачайте <span class="text-white">Hiddify</span>.</p>
-                                <p>2. Скопируйте конфиг.</p>
-                                <p>3. Нажмите <span class="text-white">Ctrl+V</span> в приложении.</p>
-                                <p>4. Включите режим VPN.</p>
+                                <p>1. Скачайте <span class="text-white">NekoBox</span> или <span class="text-white">Hiddify</span>.</p>
+                                <p>2. Скопируйте ссылку.</p>
+                                <p>3. Вставьте (Ctrl+V) и включите <span class="text-white">TUN Mode</span>.</p>
                             </div>
                         </details>
-
                         <details class="group">
                             <summary class="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/5 cursor-pointer hover:bg-white/10 transition-all duration-300">
                                 <div class="flex items-center gap-4">
@@ -224,24 +195,11 @@
                             <div class="px-4 py-4 text-sm text-slate-300 font-mono leading-relaxed border-l-2 border-gray-500/20 ml-6 mt-2 pl-6">
                                 <p>1. Скачайте <span class="text-white">V2Box</span>.</p>
                                 <p>2. Скопируйте конфиг.</p>
-                                <p>3. Приложение само предложит добавить ключ.</p>
+                                <p>3. Приложение само определит ссылку.</p>
                             </div>
                         </details>
                     </div>
                 </div>
-
-                <div class="glass-card rounded-3xl p-8 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 opacity-50"></div>
-                    <div class="relative z-10">
-                        <h3 class="text-white font-bold mb-2">Поддержите проект</h3>
-                        <p class="text-slate-400 text-sm mb-4">Это полностью Open Source инициатива.</p>
-                        <a href="https://github.com/KiryaScript/white-lists" target="_blank" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-black font-bold rounded-xl hover:bg-slate-200 transition-colors transform hover:-translate-y-1">
-                            <i class="fa-brands fa-github text-xl"></i>
-                            Star Repository
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </main>
     </div>
@@ -257,7 +215,7 @@
             </div>
             <div>
                 <h4 class="text-white font-bold text-sm">Успешно!</h4>
-                <p class="text-slate-400 text-xs">Конфигурация скопирована в буфер</p>
+                <p class="text-slate-400 text-xs">Ссылка скопирована</p>
             </div>
         </div>
     </div>
@@ -271,17 +229,20 @@
             const url = `https://github.com/${REPO_USER}/${REPO_NAME}/raw/refs/heads/main/githubmirror/${i}.txt`;
             
             let label = `Server Node #${i}`;
-            let sub = "Mixed Protocol • High Speed";
+            let sub = "Mixed Protocol • Global";
             let iconClass = "fa-link";
             
+            // Базовые стили
             let wrapperClass = "config-item group relative flex items-center justify-between p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] hover:border-white/10 transition-all duration-200 cursor-pointer mb-2";
             let iconBg = "bg-slate-700/30 text-slate-400 group-hover:text-white";
             
-            if (i === 26) {
-                label = "RU Bypass Node";
+            // Стили для VIP файлов (26, 27, 28)
+            if (i >= 26) {
+                const part = i - 25; // 1, 2, 3
+                label = `RU Bypass • Part ${part}`;
                 sub = "Обход блокировок (Белый список) 🚀";
                 iconClass = "fa-shield-halved";
-                wrapperClass = "config-item group relative flex items-center justify-between p-5 rounded-2xl bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/30 hover:border-blue-400/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 cursor-pointer mb-6 overflow-hidden";
+                wrapperClass = "config-item group relative flex items-center justify-between p-5 rounded-2xl bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/30 hover:border-blue-400/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 cursor-pointer mb-4 overflow-hidden";
                 iconBg = "bg-blue-600 text-white shadow-[0_0_15px_rgba(37,99,235,0.5)]";
             }
 
@@ -289,7 +250,7 @@
             div.className = wrapperClass;
             div.onclick = () => copyToClipboard(url);
 
-            const glow = i === 26 ? `<div class="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors"></div>` : '';
+            const glow = i >= 26 ? `<div class="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors"></div>` : '';
 
             div.innerHTML = `
                 ${glow}
@@ -302,7 +263,6 @@
                         <span class="text-xs text-slate-400 font-mono">${sub}</span>
                     </div>
                 </div>
-                
                 <div class="relative z-10 w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 group-hover:text-white group-hover:border-white/30 group-hover:bg-white/5 transition-all">
                     <i class="fa-regular fa-copy"></i>
                 </div>
@@ -310,13 +270,16 @@
             container.appendChild(div);
         }
 
-        createButton(26);
-        
+        // 1. Сначала выводим VIP (26, 27, 28)
+        for(let k=26; k<=28; k++) createButton(k);
+
+        // 2. Разделитель
         const sep = document.createElement('div');
         sep.className = "flex items-center gap-4 py-4 px-2";
         sep.innerHTML = `<div class="h-px bg-white/10 flex-1"></div><span class="text-[10px] font-mono text-slate-500 uppercase tracking-[0.2em]">Global Network</span><div class="h-px bg-white/10 flex-1"></div>`;
         container.appendChild(sep);
 
+        // 3. Остальные (1-25)
         for(let k=1; k<=25; k++) createButton(k);
 
         function copyToClipboard(text) {
