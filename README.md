@@ -73,7 +73,7 @@
 Скопируйте ссылку и вставьте в приложение.
 
 > Рекомендованные: **1, 6, 22, 23, 24, 25**.
-> Обход белых списков (для РФ): **26**.
+> Обход белых списков (для РФ): **26,27,28**.
 
 1. `https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/1.txt`
 2. `https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/2.txt`
@@ -101,7 +101,8 @@
 24. `https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/24.txt`
 25. `https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/25.txt`
 26. `https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt`
-
+27. `https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt`
+28. `https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt`
 ---
 
 ## ⚙️ Инструкции по подключению
