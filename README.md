@@ -39,7 +39,7 @@
 
 | № | Файл | Источник | Время | Дата |
 |--|--|--|--|--|
-| 1 | [`1.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/1.txt) | [sakha1370/OpenRay](https://github.com/sakha1370/OpenRay/raw/refs/heads/main/output/all_valid_proxies.txt) | 22:25 | 22.01.2026 |
+| 1 | [`1.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/1.txt) | [sakha1370/OpenRay](https://github.com/sakha1370/OpenRay/raw/refs/heads/main/output/all_valid_proxies.txt) | 00:24 | 23.01.2026 |
 | 2 | [`2.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/2.txt) | [sevcator/5ubscrpt10n](https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt) | 18:32 | 20.01.2026 |
 | 3 | [`3.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/3.txt) | [yitong2333/proxy-minging](https://raw.githubusercontent.com/yitong2333/proxy-minging/refs/heads/main/v2ray.txt) | 18:32 | 20.01.2026 |
 | 4 | [`4.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/4.txt) | [acymz/AutoVPN](https://raw.githubusercontent.com/acymz/AutoVPN/refs/heads/main/data/V2.txt) | 20:29 | 22.01.2026 |
@@ -49,13 +49,13 @@
 | 8 | [`8.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/8.txt) | [YasserDivaR/pr0xy](https://raw.githubusercontent.com/YasserDivaR/pr0xy/refs/heads/main/ShadowSocks2021.txt) | Никогда | Никогда |
 | 9 | [`9.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/9.txt) | [mohamadfg-dev/telegram-v2ray-configs-collector](https://raw.githubusercontent.com/mohamadfg-dev/telegram-v2ray-configs-collector/refs/heads/main/category/vless.txt) | 23:29 | 22.01.2026 |
 | 10 | [`10.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/10.txt) | [mheidari98/.proxy](https://raw.githubusercontent.com/mheidari98/.proxy/refs/heads/main/vless) | 18:32 | 20.01.2026 |
-| 11 | [`11.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/11.txt) | [youfoundamin/V2rayCollector](https://raw.githubusercontent.com/youfoundamin/V2rayCollector/main/mixed_iran.txt) | 15:52 | 22.01.2026 |
+| 11 | [`11.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/11.txt) | [youfoundamin/V2rayCollector](https://raw.githubusercontent.com/youfoundamin/V2rayCollector/main/mixed_iran.txt) | 00:24 | 23.01.2026 |
 | 12 | [`12.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/12.txt) | [mheidari98/.proxy](https://raw.githubusercontent.com/mheidari98/.proxy/refs/heads/main/all) | 18:32 | 20.01.2026 |
 | 13 | [`13.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/13.txt) | [Kwinshadow/TelegramV2rayCollector](https://github.com/Kwinshadow/TelegramV2rayCollector/raw/refs/heads/main/sublinks/mix.txt) | Никогда | Никогда |
 | 14 | [`14.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/14.txt) | [LalatinaHub/Mineral](https://github.com/LalatinaHub/Mineral/raw/refs/heads/master/result/nodes) | 18:32 | 20.01.2026 |
 | 15 | [`15.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/15.txt) | [miladtahanian/multi-proxy-config-fetcher](https://raw.githubusercontent.com/miladtahanian/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt) | 09:37 | 22.01.2026 |
 | 16 | [`16.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/16.txt) | [Pawdroid/Free-servers](https://raw.githubusercontent.com/Pawdroid/Free-servers/refs/heads/main/sub) | 23:29 | 22.01.2026 |
-| 17 | [`17.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/17.txt) | [MhdiTaheri/V2rayCollector_Py](https://github.com/MhdiTaheri/V2rayCollector_Py/raw/refs/heads/main/sub/Mix/mix.txt) | 23:29 | 22.01.2026 |
+| 17 | [`17.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/17.txt) | [MhdiTaheri/V2rayCollector_Py](https://github.com/MhdiTaheri/V2rayCollector_Py/raw/refs/heads/main/sub/Mix/mix.txt) | 00:24 | 23.01.2026 |
 | 18 | [`18.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/18.txt) | [Epodonios/v2ray-configs](https://github.com/Epodonios/v2ray-configs/raw/main/Splitted-By-Protocol/vmess.txt) | 18:32 | 22.01.2026 |
 | 19 | [`19.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/19.txt) | [MhdiTaheri/V2rayCollector](https://github.com/MhdiTaheri/V2rayCollector/raw/refs/heads/main/sub/mix) | 23:29 | 22.01.2026 |
 | 20 | [`20.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/20.txt) | [Argh94/Proxy-List](https://github.com/Argh94/Proxy-List/raw/refs/heads/main/All_Config.txt) | 19:37 | 22.01.2026 |
@@ -64,7 +64,7 @@
 | 23 | [`23.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/23.txt) | [AzadNetCH/Clash](https://raw.githubusercontent.com/AzadNetCH/Clash/refs/heads/main/AzadNet.txt) | Никогда | Никогда |
 | 24 | [`24.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/24.txt) | [STR97/STRUGOV](https://raw.githubusercontent.com/STR97/STRUGOV/refs/heads/main/STR.BYPASS#STR.BYPASS%F0%9F%91%BE) | 11:28 | 17.01.2026 |
 | 25 | [`25.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/25.txt) | [V2RayRoot/V2RayConfig](https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt) | 23:29 | 22.01.2026 |
-| 26 | [`26.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | [Обход блокировок (Часть 1)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | 22:25 | 22.01.2026 |
+| 26 | [`26.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | [Обход блокировок (Часть 1)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | 00:24 | 23.01.2026 |
 | 27 | [`27.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | [Обход блокировок (Часть 2)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | 23:29 | 22.01.2026 |
 | 28 | [`28.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | [Обход блокировок (Часть 3)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | 20:29 | 22.01.2026 |
 
