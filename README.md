@@ -42,10 +42,10 @@
 | 1 | [`1.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/1.txt) | [sakha1370/OpenRay](https://github.com/sakha1370/OpenRay/raw/refs/heads/main/output/all_valid_proxies.txt) | 18:36 | 29.01.2026 |
 | 2 | [`2.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/2.txt) | [sevcator/5ubscrpt10n](https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt) | 18:32 | 20.01.2026 |
 | 3 | [`3.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/3.txt) | [yitong2333/proxy-minging](https://raw.githubusercontent.com/yitong2333/proxy-minging/refs/heads/main/v2ray.txt) | 18:32 | 20.01.2026 |
-| 4 | [`4.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/4.txt) | [acymz/AutoVPN](https://raw.githubusercontent.com/acymz/AutoVPN/refs/heads/main/data/V2.txt) | 21:50 | 29.01.2026 |
+| 4 | [`4.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/4.txt) | [acymz/AutoVPN](https://raw.githubusercontent.com/acymz/AutoVPN/refs/heads/main/data/V2.txt) | 01:29 | 30.01.2026 |
 | 5 | [`5.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/5.txt) | [miladtahanian/V2RayCFGDumper](https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/config.txt) | 23:31 | 29.01.2026 |
 | 6 | [`6.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/6.txt) | [roosterkid/openproxylist](https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt) | 00:28 | 30.01.2026 |
-| 7 | [`7.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/7.txt) | [Epodonios/v2ray-configs](https://github.com/Epodonios/v2ray-configs/raw/main/Splitted-By-Protocol/trojan.txt) | 20:37 | 29.01.2026 |
+| 7 | [`7.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/7.txt) | [Epodonios/v2ray-configs](https://github.com/Epodonios/v2ray-configs/raw/main/Splitted-By-Protocol/trojan.txt) | 01:29 | 30.01.2026 |
 | 8 | [`8.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/8.txt) | [YasserDivaR/pr0xy](https://raw.githubusercontent.com/YasserDivaR/pr0xy/refs/heads/main/ShadowSocks2021.txt) | Никогда | Никогда |
 | 9 | [`9.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/9.txt) | [mohamadfg-dev/telegram-v2ray-configs-collector](https://raw.githubusercontent.com/mohamadfg-dev/telegram-v2ray-configs-collector/refs/heads/main/category/vless.txt) | 22:31 | 29.01.2026 |
 | 10 | [`10.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/10.txt) | [mheidari98/.proxy](https://raw.githubusercontent.com/mheidari98/.proxy/refs/heads/main/vless) | 18:32 | 20.01.2026 |
@@ -66,7 +66,7 @@
 | 25 | [`25.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/25.txt) | [V2RayRoot/V2RayConfig](https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt) | 00:28 | 30.01.2026 |
 | 26 | [`26.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | [Обход блокировок (Часть 1)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | 00:28 | 30.01.2026 |
 | 27 | [`27.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | [Обход блокировок (Часть 2)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | 00:28 | 30.01.2026 |
-| 28 | [`28.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | [Обход блокировок (Часть 3)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | 17:03 | 29.01.2026 |
+| 28 | [`28.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | [Обход блокировок (Часть 3)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | 01:29 | 30.01.2026 |
 
 ## 📋 Ссылки на подписки
 
