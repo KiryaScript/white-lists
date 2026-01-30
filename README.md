@@ -42,7 +42,7 @@
 | 1 | [`1.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/1.txt) | [sakha1370/OpenRay](https://github.com/sakha1370/OpenRay/raw/refs/heads/main/output/all_valid_proxies.txt) | 19:40 | 30.01.2026 |
 | 2 | [`2.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/2.txt) | [sevcator/5ubscrpt10n](https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt) | 18:32 | 20.01.2026 |
 | 3 | [`3.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/3.txt) | [yitong2333/proxy-minging](https://raw.githubusercontent.com/yitong2333/proxy-minging/refs/heads/main/v2ray.txt) | 18:32 | 20.01.2026 |
-| 4 | [`4.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/4.txt) | [acymz/AutoVPN](https://raw.githubusercontent.com/acymz/AutoVPN/refs/heads/main/data/V2.txt) | 14:29 | 30.01.2026 |
+| 4 | [`4.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/4.txt) | [acymz/AutoVPN](https://raw.githubusercontent.com/acymz/AutoVPN/refs/heads/main/data/V2.txt) | 20:35 | 30.01.2026 |
 | 5 | [`5.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/5.txt) | [miladtahanian/V2RayCFGDumper](https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/config.txt) | 18:35 | 30.01.2026 |
 | 6 | [`6.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/6.txt) | [roosterkid/openproxylist](https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt) | 00:28 | 30.01.2026 |
 | 7 | [`7.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/7.txt) | [Epodonios/v2ray-configs](https://github.com/Epodonios/v2ray-configs/raw/main/Splitted-By-Protocol/trojan.txt) | 15:58 | 30.01.2026 |
@@ -65,7 +65,7 @@
 | 24 | [`24.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/24.txt) | [STR97/STRUGOV](https://raw.githubusercontent.com/STR97/STRUGOV/refs/heads/main/STR.BYPASS#STR.BYPASS%F0%9F%91%BE) | 11:28 | 17.01.2026 |
 | 25 | [`25.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/25.txt) | [V2RayRoot/V2RayConfig](https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt) | 15:58 | 30.01.2026 |
 | 26 | [`26.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | [Обход блокировок (Часть 1)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/26.txt) | 12:39 | 30.01.2026 |
-| 27 | [`27.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | [Обход блокировок (Часть 2)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | 19:40 | 30.01.2026 |
+| 27 | [`27.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | [Обход блокировок (Часть 2)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/27.txt) | 20:35 | 30.01.2026 |
 | 28 | [`28.txt`](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | [Обход блокировок (Часть 3)](https://github.com/KiryaScript/white-lists/raw/refs/heads/main/githubmirror/28.txt) | 17:47 | 30.01.2026 |
 
 ## 📋 Ссылки на подписки
